@@ -1,0 +1,132 @@
+{
+  "terminal.integrated.defaultProfile.osx": "JavaScript Debug Terminal",
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "bash",
+      "args": [
+        "-l"
+      ],
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "zsh",
+      "args": [
+        "-l"
+      ]
+    },
+    "fish": {
+      "path": "fish",
+      "args": [
+        "-l"
+      ]
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    },
+    "JavaScript Debug Terminal": {
+      "extensionIdentifier": "ms-vscode.js-debug",
+      "icon": "debug",
+      "id": "extension.js-debug.debugTerminal",
+      "title": "JavaScript Debug Terminal"
+    }
+  },
+  "fileheader.Author": "arvinlin",
+  "fileheader.LastModifiedBy": "arvinlin", // #每次保存的时候自动格式化
+  // "editor.codeActionsOnSave": {
+  // "source.fixAll.eslint": true
+  // },
+  "eslint.alwaysShowStatus": true,
+  "eslint.workingDirectories": [
+    ".eslintrc.js",
+    {
+      "mode": "auto"
+    }
+  ],
+  "workbench.startupEditor": "none",
+  "eslint.format.enable": true,
+  "terminal.integrated.scrollback": 100000,
+  "editor.unicodeHighlight.allowedLocales": {
+    "zh-hans": true
+  },
+  "prettier.useEditorConfig": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    //  "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "[vue]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  /***********************以下是常用配置******************************/
+  /*
+    * editor 相关
+    */
+  "editor.formatOnSave": true, // #每次保存的时候自动格式化
+  "editor.formatOnPaste": true, // #每次粘贴的时候自动格式化
+  "editor.codeActionsOnSave": { // #每次保存的时候将代码按eslint格式进行修复
+    "source.fixAll.eslint": true
+  },
+    /*
+    * prettier 相关
+    */
+  "prettier.requireConfig": true,
+  /*
+    * javascript 相关
+    */
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  /*
+    * html 相关
+    */
+  "html.format.endWithNewline": true,
+  /*
+    * vetur 相关
+    */
+   "vetur.format.defaultFormatter.js": "vscode-typescript",
+  // 让vue中的js按prettier进行格式化 用这个
+  // "vetur.format.defaultFormatter.js": "prettier",
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  // "vetur.format.defaultFormatter.html": "prettier", //格式化.vue中html
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  //js-beautify-html格式化配置，属性强制换行
+  "vetur.format.defaultFormatterOptions": {
+    "js": "eslint",
+    "js-beautify-html": {
+      "wrap_attributes": "force-expand-multiline" //当超出折行长度时，将属性进行垂直对齐
+    },
+    "prettyhtml": {
+      "wrap_attributes": "force-expand-multiline", // 不管有多少属性都折行
+      "sortAttributes": false
+    },
+    // //vue中的js生效
+    // "prettier": {
+    //   "semi": false, // 句尾是否加;
+    //   "singleQuote": true, //是否使用单引号
+    //   "trailingComma": "none" //禁止随时添加逗号
+    // }
+  },
+}

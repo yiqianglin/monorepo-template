@@ -1,0 +1,17 @@
+{
+  "*.js": [
+    "eslint --fix",
+    "git add"
+  ],
+  "*.ts": [
+    "eslint --fix",
+    "git add"
+  ],
+  "*.vue": [
+    "eslint --fix",
+    "git add"
+  ],
+  "package.json": [
+    "sort-package-json"
+  ]
+}

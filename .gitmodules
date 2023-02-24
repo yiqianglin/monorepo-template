@@ -1,0 +1,3 @@
+[submodule "packages/baike_mini/src/pages/yidian"]
+	path = packages/baike_mini/src/pages/yidian
+	url = https://git.woa.com/MedicalBaiKe/medpedia_common_mini.git

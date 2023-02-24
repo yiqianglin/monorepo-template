@@ -1,0 +1,11 @@
+# Dependency directories
+node_modules/
+.eslintrc.js
+
+# IDE
+.idea
+
+packages/**
+
+# 流水线目录
+ci_artifact_project
