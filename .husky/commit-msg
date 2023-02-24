@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# 如果是使用tapd方式，则覆盖
+sed -i "" -e "s/ISSUES CLOSED: --/ --/g" $1
+npx --no-install commitlint --edit "$1"
